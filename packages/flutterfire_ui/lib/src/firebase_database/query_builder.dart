@@ -164,7 +164,7 @@ class _FirestoreQueryBuilderState extends State<FirebaseDatabaseQueryBuilder> {
         +
         1;
 
-    final query = widget.query.limitToFirst(expectedDocsCount);
+    final query = widget.query.limitToLast(expectedDocsCount);
 
     _querySubscription = query.onValue.listen(
       (event) {
